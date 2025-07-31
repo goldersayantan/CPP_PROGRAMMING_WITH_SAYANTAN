@@ -18,7 +18,7 @@ int main()  {
 
     // Bitwise ^
     int bitwiseXor = num1 ^ num2;
-    cout << "The bitwise & result of " << num1 << " ^ " << num2 << " will be : " << bitwiseXor << endl;
+    cout << "The bitwise ^ result of " << num1 << " ^ " << num2 << " will be : " << bitwiseXor << endl;
     cout << endl;
 
     // Bitwise << and >>

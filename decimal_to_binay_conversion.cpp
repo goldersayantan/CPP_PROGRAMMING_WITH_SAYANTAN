@@ -1,21 +1,21 @@
 #include <iostream>
-#include <math.h>
 using namespace std;
 
-int main()  {
-    int dec_num;
-    cout << "Enter the decimal number : ";
-    cin >> dec_num;
-    int temp = dec_num;
-    int bin_num = 0;
-    int count = 0;
-    while(temp > 0)  {
+int main() {
+    int decimalNumber;
+    cout << "Enter a decimal number : ";
+    cin >> decimalNumber;
+
+    int temp = decimalNumber;
+    int binaryNumber = 0;
+    int placeValue = 1;
+
+    while(temp > 0) {
         int rem = temp % 2;
         temp = temp / 2;
-        bin_num += rem * pow(10 , count);
-        count++;
+        binaryNumber += rem * placeValue;
+        placeValue *= 10;
     }
-    cout << "The binary number equivalent to " << dec_num << " will be : " << bin_num;
-    return 0;
+    cout << "The binary number equivalent to " << decimalNumber << " will be : " << binaryNumber << endl;
 }
 
